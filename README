@@ -1,0 +1,38 @@
+NAME
+    LWP::UserAgent::Patch::FilterMirror - Add filtering for mirror()
+
+VERSION
+    This document describes version 0.01 of
+    LWP::UserAgent::Patch::FilterMirror (from Perl distribution
+    LWP-UserAgent-Patch-FilterMirror), released on 2014-06-29.
+
+SYNOPSIS
+     use LWP::UserAgent::Patch::FilterMirror -filter => sub { ... };
+     # use LWP::UserAgent's mirror() as usual
+     # ...
+
+HOMEPAGE
+    Please visit the project's homepage at
+    <https://metacpan.org/release/LWP-UserAgent-Patch-FilterMirror>.
+
+SOURCE
+    Source repository is at
+    <https://github.com/sharyanto/perl-LWP-UserAgent-Patch-FilterMirror>.
+
+BUGS
+    Please report any bugs or feature requests on the bugtracker website
+    <https://rt.cpan.org/Public/Dist/Display.html?Name=LWP-UserAgent-Patch-F
+    ilterMirror>
+
+    When submitting a bug or request, please include a test-file or a patch
+    to an existing test-file that illustrates the bug or desired feature.
+
+AUTHOR
+    Steven Haryanto <stevenharyanto@gmail.com>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2014 by Steven Haryanto.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
