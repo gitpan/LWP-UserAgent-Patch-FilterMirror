@@ -8,7 +8,7 @@ use Module::Patch 0.12 qw();
 use base qw(Module::Patch);
 
 our $DATE = '2014-06-29'; # DATE
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 our %config;
 
@@ -17,8 +17,8 @@ my $p_mirror = sub {
     my $orig = $ctx->{orig};
 
     my ($self, $url, $file) = @_;
-    die __PACKAGE__ . ": please specify filter code" unless $config{filter};
-    return unless $config{filter}->($url, $file);
+    die __PACKAGE__ . ": please specify filter code" unless $config{-filter};
+    return unless $config{-filter}->($url, $file);
     return $orig->(@_);
 };
 
@@ -26,7 +26,7 @@ sub patch_data {
     return {
         v => 3,
         config => {
-            filter => {
+            -filter => {
                 schema => 'code*',
             },
         },
@@ -56,7 +56,7 @@ LWP::UserAgent::Patch::FilterMirror - Add filtering for mirror()
 
 =head1 VERSION
 
-This document describes version 0.01 of LWP::UserAgent::Patch::FilterMirror (from Perl distribution LWP-UserAgent-Patch-FilterMirror), released on 2014-06-29.
+This document describes version 0.02 of LWP::UserAgent::Patch::FilterMirror (from Perl distribution LWP-UserAgent-Patch-FilterMirror), released on 2014-06-29.
 
 =head1 SYNOPSIS
 

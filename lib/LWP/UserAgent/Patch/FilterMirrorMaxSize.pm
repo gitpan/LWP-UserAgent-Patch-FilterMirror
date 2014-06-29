@@ -9,7 +9,7 @@ use Module::Patch 0.12 qw();
 use base qw(Module::Patch);
 
 our $DATE = '2014-06-29'; # DATE
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 our %config;
 
@@ -82,7 +82,7 @@ LWP::UserAgent::Patch::FilterMirrorMaxSize - Dont' mirror() files larger than a 
 
 =head1 VERSION
 
-This document describes version 0.01 of LWP::UserAgent::Patch::FilterMirrorMaxSize (from Perl distribution LWP-UserAgent-Patch-FilterMirror), released on 2014-06-29.
+This document describes version 0.02 of LWP::UserAgent::Patch::FilterMirrorMaxSize (from Perl distribution LWP-UserAgent-Patch-FilterMirror), released on 2014-06-29.
 
 =head1 SYNOPSIS
 

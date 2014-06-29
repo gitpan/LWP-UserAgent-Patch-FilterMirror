@@ -25,7 +25,7 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=LWP-UserAgent-Patch-FilterMirror
   homepage: https://metacpan.org/release/LWP-UserAgent-Patch-FilterMirror
   repository: git://github.com/sharyanto/perl-LWP-UserAgent-Patch-FilterMirror.git
-version: '0.01'
+version: '0.02'
 x_Dist_Zilla:
   perl:
     version: '5.018002'
