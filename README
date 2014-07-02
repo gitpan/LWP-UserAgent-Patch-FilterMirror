@@ -2,9 +2,9 @@ NAME
     LWP::UserAgent::Patch::FilterMirror - Add filtering for mirror()
 
 VERSION
-    This document describes version 0.02 of
+    This document describes version 0.03 of
     LWP::UserAgent::Patch::FilterMirror (from Perl distribution
-    LWP-UserAgent-Patch-FilterMirror), released on 2014-06-29.
+    LWP-UserAgent-Patch-FilterMirror), released on 2014-07-02.
 
 SYNOPSIS
      use LWP::UserAgent::Patch::FilterMirror -filter => sub { ... };

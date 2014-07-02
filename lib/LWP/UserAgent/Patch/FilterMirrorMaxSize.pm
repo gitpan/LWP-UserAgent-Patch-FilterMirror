@@ -8,8 +8,8 @@ use HTTP::Response;
 use Module::Patch 0.12 qw();
 use base qw(Module::Patch);
 
-our $DATE = '2014-06-29'; # DATE
-our $VERSION = '0.02'; # VERSION
+our $DATE = '2014-07-02'; # DATE
+our $VERSION = '0.03'; # VERSION
 
 our %config;
 
@@ -82,7 +82,7 @@ LWP::UserAgent::Patch::FilterMirrorMaxSize - Dont' mirror() files larger than a 
 
 =head1 VERSION
 
-This document describes version 0.02 of LWP::UserAgent::Patch::FilterMirrorMaxSize (from Perl distribution LWP-UserAgent-Patch-FilterMirror), released on 2014-06-29.
+This document describes version 0.03 of LWP::UserAgent::Patch::FilterMirrorMaxSize (from Perl distribution LWP-UserAgent-Patch-FilterMirror), released on 2014-07-02.
 
 =head1 SYNOPSIS
 
@@ -91,12 +91,18 @@ This document describes version 0.02 of LWP::UserAgent::Patch::FilterMirrorMaxSi
 
 To use with CPAN::Mini command-line script:
 
+ % PERL5OPT="-MLWP::UserAgent::Patch::FilterMirrorMaxSize=-size,10485760,-verbose,1" minicpan -l /cpan -r http://mirrors.kernel.org/cpan/
+
 =head1 DESCRIPTION
 
 If size is larger than the limit, the patch's wrapper method will return a dummy
 304 (not modified) response object. This trick should work on at least some
 applications (like with L<CPAN::Mini>, which I originally wrote this patch
 module for), but it might not :-)
+
+=head1 SEE ALSO
+
+L<http://blogs.perl.org/users/steven_haryanto/2014/06/skipping-large-files-when-mirroring-your-mini-cpan.html>
 
 =head1 HOMEPAGE
 

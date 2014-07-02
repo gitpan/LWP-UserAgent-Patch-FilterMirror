@@ -7,8 +7,8 @@ no warnings;
 use Module::Patch 0.12 qw();
 use base qw(Module::Patch);
 
-our $DATE = '2014-06-29'; # DATE
-our $VERSION = '0.02'; # VERSION
+our $DATE = '2014-07-02'; # DATE
+our $VERSION = '0.03'; # VERSION
 
 our %config;
 
@@ -56,7 +56,7 @@ LWP::UserAgent::Patch::FilterMirror - Add filtering for mirror()
 
 =head1 VERSION
 
-This document describes version 0.02 of LWP::UserAgent::Patch::FilterMirror (from Perl distribution LWP-UserAgent-Patch-FilterMirror), released on 2014-06-29.
+This document describes version 0.03 of LWP::UserAgent::Patch::FilterMirror (from Perl distribution LWP-UserAgent-Patch-FilterMirror), released on 2014-07-02.
 
 =head1 SYNOPSIS
 
